@@ -693,7 +693,7 @@ img {
 /* About Us
 --------------------------- */
 .aboutUs1-container {
-    background-image: url(../img/waterfall.jpg);
+    background-image: url(../img/waterfall.png);
 }
 
 .aboutUs1-container {
@@ -769,14 +769,14 @@ img {
 
 
 .aboutUs2-container {
-    background-image: url(../img/dance.jpg);
+    background-image: url(../img/jaranan.jpg);
 }
 
 .aboutUs2-container {
     background-repeat: no-repeat;
     background-position: left;
-    background-size: auto 90%;
-    background-position-y: 70px;
+    background-size: auto 100%;
+    background-position-y: 40px;
 }
 
 #about-us2 .read-more {
@@ -799,7 +799,7 @@ img {
 .about-us2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 60%;
+    margin-left: 50%;
 }
 
 .about-us2 h3 {

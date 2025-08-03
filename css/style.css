@@ -225,7 +225,7 @@ p {
     background: #3498db;
     position: relative;
     background: url(../img/slide-1.jpg) top center no-repeat;
-    height: 765px;
+    height: 650px;
 }
 
 .hero_section {
@@ -247,7 +247,6 @@ p {
 
 .top_left_cont {
     padding: 110px 0;
-    align-items: center;
 }
 
 .top_left_cont h3 {
@@ -319,6 +318,27 @@ a.read_more:hover {
     border: 1px solid #3498db;
 }
 
+.read_more3 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(248, 90, 64, 0.3);
+}
+
+.read_more3:hover {
+  background-color: #105cc1;
+  transform: translateY(-2px);
+  color: #ffffff;
+  text-decoration: none;
+}
 
 
 
@@ -673,7 +693,7 @@ img {
 /* About Us
 --------------------------- */
 .aboutUs1-container {
-    background-image: url(../img/waterfall.png);
+    background-image: url(../img/waterfall.jpg);
 }
 
 .aboutUs1-container {
@@ -749,14 +769,14 @@ img {
 
 
 .aboutUs2-container {
-    background-image: url(../img/jaranan.jpg);
+    background-image: url(../img/dance.jpg);
 }
 
 .aboutUs2-container {
     background-repeat: no-repeat;
     background-position: left;
-    background-size: auto 100%;
-    background-position-y: 40px;
+    background-size: auto 90%;
+    background-position-y: 70px;
 }
 
 #about-us2 .read-more {
@@ -779,7 +799,7 @@ img {
 .about-us2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 50%;
+    margin-left: 60%;
 }
 
 .about-us2 h3 {
@@ -1957,121 +1977,116 @@ div.mc-image {
 }
 
 .contact-compact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .contact-compact span,
 .contact-compact a {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 .contact-compact i {
-    margin-right: 5px;
+  margin-right: 5px;
 }
-
 .tentang-desa-section {
-    padding: 60px 20px;
-    background-color: #f7fbff;
-    animation: fadeIn 1.2s ease-in-out both;
+  padding: 60px 20px;
+  background-color: #f7fbff;
+  animation: fadeIn 1.2s ease-in-out both;
 }
 
 .tentang-desa-container {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .tentang-desa-title {
-    font-size: 28px;
-    color: #0077cc;
-    margin-bottom: 20px;
-    font-weight: bold;
+  font-size: 28px;
+  color: #0077cc;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .tentang-desa-text {
-    font-size: 18px;
-    color: #444;
-    line-height: 1.8;
-    text-align: justify;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
 }
 
 /* Reuse animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 .visi-section {
-    display: flex;
-    justify-content: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #f0f9ff, #e0f7ff);
-    animation: fadeIn 1.2s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f0f9ff, #e0f7ff);
+  animation: fadeIn 1.2s ease-in-out both;
 }
 
 .visi-card {
-    max-width: 800px;
-    background-color: #ffffff;
-    padding: 30px;
-    border-left: 8px solid #0077cc;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    animation: slideUp 1s ease forwards;
-    opacity: 0;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-left: 8px solid #0077cc;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
 }
 
 .visi-card h3 {
-    font-size: 26px;
-    color: #0077cc;
-    margin-bottom: 15px;
-    text-align: center;
-    font-weight: 700;
+  font-size: 26px;
+  color: #0077cc;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .visi-card p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.7;
-    text-align: justify;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 /* Animations */
 @keyframes slideUp {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.98);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

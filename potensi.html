@@ -94,54 +94,55 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="map-section" class="page-section fadeInDown animated wow"
-        style="background-color: #f9f9f9; padding-top: 60px; padding-bottom: 60px; border-top: 4px solid #e0e0e0;">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-12" data-aos="fade-down">
-                    <h2 class="section-heading">Potensi Komoditas Pertanian</h2>
-                    <p class="text-muted">
-                        Telusuri hasil analisis persebaran potensi komoditas pertanian di Desa Lorejo, Bakung
-                        menggunakan teknologi GIS dan pengolahan citra udara.
-                    </p>
 
+        <section id="map-section" class="page-section fadeInDown animated wow"
+            style="background-color: #f9f9f9; padding-top: 60px; padding-bottom: 60px; border-top: 4px solid #e0e0e0;">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-12" data-aos="fade-down">
+                        <h2 class="section-heading">Potensi Komoditas Pertanian</h2>
+                        <p class="text-muted">
+                            Telusuri hasil analisis persebaran potensi komoditas pertanian di Desa Lorejo, Bakung
+                            menggunakan teknologi GIS dan pengolahan citra udara.
+                        </p>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container position-relative">
-            <div class="map-container shadow rounded" style="overflow: hidden; position: relative;">
-                <iframe
-                    src="https://www.arcgis.com/apps/instant/basic/index.html?appid=fc6ef68c6f6c4e8bb44396d6d018641d"
-                    width="100%" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported
-                    on this page.</iframe>
+            <div class="container position-relative">
+                <div class="map-container shadow rounded" style="overflow: hidden; position: relative;">
+                    <iframe
+                        src="https://www.arcgis.com/apps/instant/basic/index.html?appid=fc6ef68c6f6c4e8bb44396d6d018641d"
+                        width="100%" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not
+                        supported
+                        on this page.</iframe>
+                </div>
             </div>
-        </div>
 
-        <p class="text-center mt-3 text-muted" style="font-size: 14px; font-style: italic;" data-aos="fade-up"
-            data-aos-delay="200">
-            Peta mungkin membutuhkan beberapa saat untuk dimuat. Silakan tunggu sementara peta persebaran potensi
-            komoditas pertanian ditampilkan.
-        </p>
+            <p class="text-center mt-3 text-muted" style="font-size: 14px; font-style: italic;" data-aos="fade-up"
+                data-aos-delay="200">
+                Peta mungkin membutuhkan beberapa saat untuk dimuat. Silakan tunggu sementara peta persebaran potensi
+                komoditas pertanian ditampilkan.
+            </p>
 
-        </div>
+            </div>
+        </section>
+
+        <section id="tentang-desa" class="tentang-desa-section">
+            <div class="tentang-desa-container">
+                <h2 class="tentang-desa-title">Sektor Pertanian</h2>
+                <p class="tentang-desa-text">
+                    Pertanian merupakan tulang punggung ekonomi masyarakat Desa Lorejo. Komoditas utama meliputi padi,
+                    plawija (seperti kacang-kacangan dan ubi), hortikultura (sayur dan buah), serta tanaman perkebunan
+                    seperti jagung dan tebu. Sistem pertanian yang masih berbasis tradisional namun tetap menunjukkan
+                    potensi lokal yang berdaya saing.
+
+            </div>
+        </section>
     </section>
 
-    <footer class="footer_wrapper" id="contact">
-        <div class="container text-center">
-            <div class="contact-compact">
-                <span><i class="fa fa-phone"></i> +62812345678 </span> |
-                <span><i class="fa fa-envelope"></i> emailbakung@gmail.com </span> |
-                <span>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </span>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -153,6 +154,27 @@
     <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+                const navLinks = document.querySelectorAll('#mainNav li a');
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === currentPage || (href === 'index.html' && currentPage === '')) {
+                        link.parentElement.classList.add('active');
+                    }
+                });
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>
